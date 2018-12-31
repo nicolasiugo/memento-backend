@@ -1,0 +1,11 @@
+# import * from './generated/prisma.graphql'
+
+type Mutation {
+  createCard(title: String, frontContent: String, backContent: String): Card!
+  updateCard(title: String, frontContent: String, backContent: String): Card!
+  updateCardAnswer(id: ID, answer: String): Card!
+}
+
+type Query {
+  cardsForToday: [Card]!
+}

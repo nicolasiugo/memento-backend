@@ -1,0 +1,20 @@
+type User {
+  id: ID! @unique
+  name: String!
+  email: String!
+  currentStudyingDay: Int!
+}
+
+
+type Card {
+  id: ID! @unique
+  title: String!
+  frontContent: String
+  backContent: String
+  level: Int! @default(value: 0)
+  isActive: Boolean! @default(value: "true")
+  lastReviewed: DateTime
+  createdAt: DateTime!
+  updatedAt: DateTime!
+  user: User!
+}

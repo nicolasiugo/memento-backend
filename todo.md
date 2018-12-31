@@ -1,0 +1,8 @@
+- agregar typescript
+- Logica de Card a un modelo
+- Soporte multiusuario:
+  - El level de la card y el lastreviewed debe asociarse al usuario
+  - manejo de usuario en session
+- Constate para el valor del feedback (NOT_OK, OK)
+- Soporte de Topics para agrupar cards
+- Definir roadmap
