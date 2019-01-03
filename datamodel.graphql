@@ -8,7 +8,6 @@ type User {
 
 type Card {
   id: ID! @unique
-  title: String!
   frontContent: String
   backContent: String
   level: Int! @default(value: 0)

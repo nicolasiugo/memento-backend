@@ -6,6 +6,9 @@ const mutations = {
       {
         data: {
           ...args,
+          user: {
+            connect: { id: ctx.request.user.id },
+          },
         },
       },
       info
